@@ -23,3 +23,15 @@ test("2 * 2 is 4", () => {
 test("2 / 2 is 1", () => {
     expect(practice.calc.divide(2,2)).toBe(1);
 })
+
+test("'xyz', 3 returns 'abc'", () => {
+    expect(practice.caesarCipher("xyz",3)).toBe("abc")
+})
+
+test("'Hello, World!', 3 returns 'Khoor, Zruog!'", () => {
+    expect(practice.caesarCipher("Hello, World!",3)).toBe("Khoor, Zruog!")
+})
+
+test("'HeLLo', 3 returns 'KhOOr'", () => {
+    expect(practice.caesarCipher("HeLLo",3)).toBe("KhOOr")
+})
