@@ -35,3 +35,7 @@ test("'Hello, World!', 3 returns 'Khoor, Zruog!'", () => {
 test("'HeLLo', 3 returns 'KhOOr'", () => {
     expect(practice.caesarCipher("HeLLo",3)).toBe("KhOOr")
 })
+
+test("analyzeArray is correct", () => {
+    expect(practice.analyzeArray([1,8,3,4,2,6])).toMatchObject({average:4,min:1,max:8,length:6})
+})
